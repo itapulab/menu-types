@@ -36,3 +36,11 @@ export type CreateBusinessBillPayload = {
   table: number;
   createdBy: Creator;
 } & BasePayload;
+
+export type CreateManagersPayload = {
+  businessId: string;
+  usersData: {
+    email: string;
+    role: BusinessRole;
+  }[];
+} & BasePayload;

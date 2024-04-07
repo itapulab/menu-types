@@ -24,6 +24,7 @@ export type {
   BasePayloadMeta,
   CreateBusinessBillPayload,
   CreateBusinessUserPayload,
+  CreateManagersPayload,
   CreateUserPayload,
 } from "./functions";
 export type { Environment, Flavor, LatLng, WithId } from "./general";
