@@ -49,13 +49,13 @@ export type GetManagersPayload = {
   businessId: string;
 } & BasePayload;
 
-export type UpdateManagersPayload = {
+export type UpdateManagerPayload = {
   businessId: string;
   email: string;
   role: BusinessRole;
 } & BasePayload;
 
-export type DeleteManagersPayload = {
+export type DeleteManagerPayload = {
   businessId: string;
   email: string;
 } & BasePayload;
