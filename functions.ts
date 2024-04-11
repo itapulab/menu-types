@@ -44,3 +44,7 @@ export type CreateManagersPayload = {
     role: BusinessRole;
   }[];
 } & BasePayload;
+
+export type GetManagersPayload = {
+  businessId: string;
+} & BasePayload;

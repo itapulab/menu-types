@@ -27,6 +27,7 @@ export type {
   CreateBusinessUserPayload,
   CreateManagersPayload,
   CreateUserPayload,
+  GetManagersPayload,
 } from "./functions";
 export type { Environment, Flavor, LatLng, WithId } from "./general";
 export type { Category, MenuOrdering, Product } from "./menu";
