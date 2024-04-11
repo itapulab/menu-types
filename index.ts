@@ -13,7 +13,7 @@ export type {
 export type {
   Business,
   BusinessAddress,
-  BusinessManagers,
+  BusinessManager,
   BusinessOperation,
   BusinessSituation,
   BusinessStatus,
@@ -28,7 +28,9 @@ export type {
   CreateBusinessUserPayload,
   CreateManagersPayload,
   CreateUserPayload,
+  DeleteManagersPayload,
   GetManagersPayload,
+  UpdateManagersPayload,
 } from "./functions";
 export type { Environment, Flavor, LatLng, WithId } from "./general";
 export type { Category, MenuOrdering, Product } from "./menu";

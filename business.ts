@@ -54,7 +54,7 @@ export type Business = {
   logoUrl?: string | null;
 };
 
-export type BusinessManagers = {
+export type BusinessManager = {
   email: string;
   role: UserRole | null;
 };

@@ -48,3 +48,14 @@ export type CreateManagersPayload = {
 export type GetManagersPayload = {
   businessId: string;
 } & BasePayload;
+
+export type UpdateManagersPayload = {
+  businessId: string;
+  email: string;
+  role: BusinessRole;
+} & BasePayload;
+
+export type DeleteManagersPayload = {
+  businessId: string;
+  email: string;
+} & BasePayload;
