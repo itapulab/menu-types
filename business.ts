@@ -1,5 +1,6 @@
 import { Timestamp } from "./external";
 import { LatLng } from "./general";
+import { UserRole } from "./user";
 
 export type BusinessType = "bar" | "restaurant";
 
@@ -51,4 +52,9 @@ export type Business = {
   updatedAt?: Timestamp;
   // transient
   logoUrl?: string | null;
+};
+
+export type BusinessManagers = {
+  email: string;
+  role: UserRole | null;
 };

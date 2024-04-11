@@ -13,6 +13,7 @@ export type {
 export type {
   Business,
   BusinessAddress,
+  BusinessManagers,
   BusinessOperation,
   BusinessSituation,
   BusinessStatus,
