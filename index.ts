@@ -18,6 +18,7 @@ export type {
   BusinessSituation,
   BusinessStatus,
   BusinessSubscription,
+  BusinessTimestamps,
   BusinessType,
 } from "./business";
 export type {
@@ -39,5 +40,6 @@ export type {
   BusinessRole,
   UserProfile,
   UserProfileSituation,
+  UserProfileTimestamps,
   UserRole,
 } from "./user";
