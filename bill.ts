@@ -16,6 +16,8 @@ export type BillCustomer = {
 export type BillQuota = {
   customer: BillCustomer;
   status: BillStatus;
+  chargeServiceFee: boolean;
+  serviceFee?: number;
   value?: number;
   // transient
   items?: OrderItem[];
@@ -60,15 +62,15 @@ export type Order = {
 };
 
 export type Bill = {
-  // code: string;
   table: number;
   createdBy: Creator;
   status: BillStatus;
-  serviceFee: boolean;
+  chargeServiceFee: boolean;
   quotas: BillQuota[];
   // metadata
   createdAt: Timestamp;
   updatedAt?: Timestamp;
+  serviceFee?: number;
   value?: number;
   // trasient
   orders?: Order[];
