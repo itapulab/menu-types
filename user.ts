@@ -19,7 +19,7 @@ export type UserProfile = {
   name?: string;
   cpf?: string;
   phone?: string;
-  situation?: UserProfileSituation;
+  situation: UserProfileSituation;
   // metadata
   timestamps: UserProfileTimestamps;
   createdAt: Timestamp;
