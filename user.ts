@@ -10,6 +10,10 @@ export type UserProfileSituation =
   | "rejected"
   | "blocked";
 
+export type UserTimestamps = {
+  [K in UserProfileSituation]?: Timestamp;
+};
+
 export type UserProfile = {
   email: string;
   name?: string;
@@ -17,6 +21,7 @@ export type UserProfile = {
   phone?: string;
   situation?: UserProfileSituation;
   // metadata
+  timestamps: UserTimestamps;
   createdAt: Timestamp;
   updatedAt?: Timestamp;
 };

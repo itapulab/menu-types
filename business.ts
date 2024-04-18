@@ -8,6 +8,7 @@ export type BusinessSituation =
   | "pending"
   | "approved"
   | "payment-pending"
+  | "suspended"
   | "blocked";
 
 export type BusinessStatus = "available" | "unavailable";
@@ -30,6 +31,10 @@ export type BusinessOperation = {
   stock: boolean;
 };
 
+export type BusinessTimestamps = {
+  [K in BusinessSituation]?: Timestamp;
+};
+
 export type Business = {
   code: string;
   type: BusinessType;
@@ -48,6 +53,7 @@ export type Business = {
   situation: BusinessSituation;
   // reviews?: BusinessReviews;
   // metadata
+  timestamps: BusinessTimestamps;
   createdAt: Timestamp;
   updatedAt?: Timestamp;
   // transient
