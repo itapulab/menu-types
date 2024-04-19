@@ -65,7 +65,6 @@ export type Bill = {
   table: number;
   createdBy: Creator;
   status: BillStatus;
-  chargeServiceFee: boolean;
   quotas: BillQuota[];
   // metadata
   createdAt: Timestamp;
