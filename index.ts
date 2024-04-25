@@ -26,6 +26,7 @@ export type {
   BasePayloadMeta,
   CompleteRegistrationPayload,
   CreateBusinessBillPayload,
+  CreateBusinessSlugPayload,
   CreateBusinessUserPayload,
   CreateManagersPayload,
   CreateUserPayload,

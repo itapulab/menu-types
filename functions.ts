@@ -19,6 +19,11 @@ export type CompleteRegistrationPayload = {
   businessId: string;
 } & BasePayload;
 
+export type CreateBusinessSlugPayload = {
+  businessId: string;
+  slug: string;
+} & BasePayload;
+
 export type CreateBusinessUserPayload = {
   businessId: string;
   users: {
