@@ -76,7 +76,7 @@ export type Bill = {
 };
 
 export type Notification = {
-  type: "order" | "bill";
+  type: "order" | "bill" | "quota";
   id: string;
   table: number;
   timestamp: Timestamp;
