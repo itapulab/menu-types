@@ -75,9 +75,19 @@ export type Bill = {
   orders?: Order[];
 };
 
-export type Notification = {
-  type: "order" | "bill" | "quota";
+type OrderNotification = {
+  type: "order";
   id: string;
   table: number;
   timestamp: Timestamp;
 };
+
+type BillNotification = {
+  type: "bill" | "quota";
+  id: string;
+  table: number;
+  status?: BillStatus;
+  timestamp: Timestamp;
+};
+
+export type Notification = OrderNotification | BillNotification;
