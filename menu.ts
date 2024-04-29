@@ -8,14 +8,30 @@ export type MenuOrdering = {
   };
 };
 
+export type MenuDisplay = "default" | "ordering" | "stock";
+
 export type Category = {
   name: string;
   enabled: boolean;
+  /** Item external code. */
+  externalId?: string;
   // metadata
   createdAt: Timestamp;
   updatedAt?: Timestamp;
   // trasient
   items?: WithId<Product>[];
+};
+
+export type ProductPrice = {
+  /** Used when a discount is applied. */
+  originalValue?: number;
+  /** Final product price. */
+  value: number;
+};
+
+export type ProductStock = {
+  enabled: boolean;
+  value?: number;
 };
 
 export type Product = {
@@ -25,12 +41,44 @@ export type Product = {
     name: string;
   };
   description?: string;
-  price: number;
-  stock?: number;
-  imageUrl?: string | null;
-  additionalInfos?: string[];
+  price: ProductPrice;
   enabled: boolean;
+  /** Number of people served by the product portion. */
+  serving?: number;
+  stock?: ProductStock;
+  /** Product classification with respect to specific diets. */
+  classifications?: string[];
+  complementsGroupsIds?: string[];
+  /** Item external code. */
+  externalId?: string;
   // metadata
   createdAt: Timestamp;
   updatedAt?: Timestamp;
+  // transient
+  imageUrl?: string | null;
+  complementsGroups?: WithId<ComplementsGroup>[];
 };
+
+export interface ComplementsGroup {
+  name: string;
+  required: boolean;
+  /** Minimum items allowed per group. */
+  minimum: number;
+  /** Maximum items allowed per group. */
+  maximum: number;
+  enabled: boolean;
+  complements: Complement[];
+  /** Item external code. */
+  externalId?: string;
+}
+
+export interface Complement {
+  name: string;
+  description?: string;
+  price: number;
+  enabled: boolean;
+  /** Maximum allowed for the item. Zero for does not apply. */
+  maximum: number;
+  /** Item external code. */
+  externalId?: string;
+}

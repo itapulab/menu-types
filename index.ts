@@ -35,7 +35,16 @@ export type {
   UpdateManagerPayload,
 } from "./functions";
 export type { Environment, Flavor, LatLng, WithId } from "./general";
-export type { Category, MenuOrdering, Product } from "./menu";
+export type {
+  Category,
+  Complement,
+  ComplementsGroup,
+  MenuDisplay,
+  MenuOrdering,
+  Product,
+  ProductPrice,
+  ProductStock,
+} from "./menu";
 export type {
   AdminRole,
   BusinessRole,

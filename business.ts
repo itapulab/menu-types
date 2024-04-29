@@ -28,7 +28,6 @@ export type BusinessAddress = {
 
 export type BusinessOperation = {
   tables: number;
-  stock: boolean;
 };
 
 export type BusinessTimestamps = {
