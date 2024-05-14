@@ -60,6 +60,7 @@ export type Product = {
 };
 
 export interface ComplementsGroup {
+  productId: string;
   name: string;
   required: boolean;
   /** Minimum items allowed per group. */

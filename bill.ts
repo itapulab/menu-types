@@ -38,10 +38,25 @@ export type Creator = {
 
 export type OrderItem = {
   id: string;
-  category: string;
   name: string;
   quantity: number;
   price: number;
+  externalId?: string;
+  complements?: OrderItemComplement[];
+  // transient
+  imageUrl?: string | null;
+};
+
+export type OrderItemComplement = {
+  name: string;
+  price: number;
+  quantity: number;
+  externalId?: string;
+  group: {
+    id: string;
+    name: string;
+    externalId?: string;
+  };
 };
 
 export type OrderStatus = "pending" | "confirmed" | "dispatched" | "canceled";
