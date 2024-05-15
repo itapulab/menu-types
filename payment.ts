@@ -1,7 +1,7 @@
 import { BusinessService } from "./business";
 import { Timestamp } from "./external";
 
-export type PaymentStatus = "pending" | "paid" | "canceled";
+export type PaymentStatus = "processing" | "pending" | "paid" | "canceled";
 
 export type PaymentMethod = "pix" | "billet" | "credits";
 
@@ -14,6 +14,7 @@ export type Payment = {
   total: number;
   status: PaymentStatus;
   method?: PaymentMethod;
+  billetUrl?: string;
   createdAt: Timestamp;
   updatedAt: Timestamp;
   expiresAt: Timestamp;
