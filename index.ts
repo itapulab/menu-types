@@ -46,6 +46,12 @@ export type {
   ProductStock,
 } from "./menu";
 export type {
+  Payment,
+  PaymentMethod,
+  PaymentService,
+  PaymentStatus,
+} from "./payment";
+export type {
   AdminRole,
   BusinessRole,
   UserProfile,
