@@ -34,9 +34,12 @@ export type BusinessTimestamps = {
   [K in BusinessSituation]?: Timestamp;
 };
 
+export type BusinessService = "menu";
+
 export type Business = {
   code: string;
   type: BusinessType;
+  services: BusinessService[];
   cnpj?: string;
   companyName?: string;
   name?: string;
