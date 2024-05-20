@@ -40,6 +40,8 @@ export type Business = {
   code: string;
   type: BusinessType;
   services: BusinessService[];
+  /** Member get member program business id. */
+  mgmId?: string;
   cnpj?: string;
   companyName?: string;
   name?: string;
