@@ -6,4 +6,8 @@ export type PlatformParams = {
   services: {
     menu: PlatformService;
   };
+  mgm: {
+    enabled: boolean;
+    credit: number;
+  };
 };
