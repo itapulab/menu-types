@@ -64,3 +64,13 @@ export type DeleteManagerPayload = {
   businessId: string;
   email: string;
 } & BasePayload;
+
+export type GetQRCodesDataPayload = {
+  businessId: string;
+  tables: number;
+} & BasePayload;
+
+export type GetQRCodeTokenInfosPayload = {
+  token: string;
+  type?: "with-time" | "data";
+} & BasePayload;

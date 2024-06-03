@@ -33,6 +33,8 @@ export type {
   CreateUserPayload,
   DeleteManagerPayload,
   GetManagersPayload,
+  GetQRCodeTokenInfosPayload,
+  GetQRCodesDataPayload,
   UpdateManagerPayload,
 } from "./functions";
 export type { Environment, Flavor, LatLng, WithId } from "./general";
