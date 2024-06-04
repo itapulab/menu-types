@@ -72,5 +72,6 @@ export type GetQRCodesDataPayload = {
 
 export type GetQRCodeTokenInfosPayload = {
   token: string;
-  type?: "with-time" | "data";
+  slug: string;
+  type?: "redirect" | "data";
 } & BasePayload;
