@@ -72,6 +72,5 @@ export type GetQRCodesDataPayload = {
 
 export type GetQRCodeTokenInfosPayload = {
   token: string;
-  slug: string;
   type?: "redirect" | "data";
 } & BasePayload;
