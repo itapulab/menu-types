@@ -1,4 +1,4 @@
-import { Creator } from "./bill";
+import { Creator, OrderItem } from "./bill";
 import { BusinessRole } from "./user";
 
 export type BasePayloadMeta = {
@@ -39,6 +39,11 @@ export type VerifyUserIdTokenPayload = {
 export type CreateBusinessBillPayload = {
   token: string;
   createdBy: Creator;
+} & BasePayload;
+
+export type CreateBusinessOrderPayload = {
+  token: string;
+  orderItems: OrderItem[];
 } & BasePayload;
 
 export type CreateManagersPayload = {
