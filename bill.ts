@@ -43,6 +43,7 @@ export type OrderItem = {
   price: number;
   externalId?: string;
   complements?: OrderItemComplement[];
+  notes?: string;
   // transient
   imageUrl?: string | null;
 };
