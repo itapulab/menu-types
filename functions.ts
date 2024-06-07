@@ -78,3 +78,9 @@ export type GetQRCodeTokenInfosPayload = {
   token: string;
   type?: "redirect" | "data";
 } & BasePayload;
+
+export type GetCustomerOrdersPayload = {
+  token: string;
+  operation: "get" | "cancel";
+  orderId?: string;
+} & BasePayload;

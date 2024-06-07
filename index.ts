@@ -33,6 +33,7 @@ export type {
   CreateManagersPayload,
   CreateUserPayload,
   DeleteManagerPayload,
+  GetCustomerOrdersPayload,
   GetManagersPayload,
   GetQRCodeTokenInfosPayload,
   GetQRCodesDataPayload,
