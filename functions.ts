@@ -84,3 +84,8 @@ export type GetCustomerOrdersPayload = {
   operation: "get" | "cancel";
   orderId?: string;
 } & BasePayload;
+
+export type GetCustomerBillPayload = {
+  token: string;
+  operation: "get" | "request-bill" | "request-quota";
+} & BasePayload;
