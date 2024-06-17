@@ -33,6 +33,7 @@ export type {
   CreateManagersPayload,
   CreateUserPayload,
   DeleteManagerPayload,
+  GetBusinessBillTokenPayload,
   GetCustomerBillPayload,
   GetCustomerOrdersPayload,
   GetManagersPayload,

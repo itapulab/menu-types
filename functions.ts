@@ -32,6 +32,12 @@ export type CreateBusinessUserPayload = {
   }[];
 } & BasePayload;
 
+export type GetBusinessBillTokenPayload = {
+  businessId: string;
+  table: number;
+  billId: string;
+} & BasePayload;
+
 export type VerifyUserIdTokenPayload = {
   token: string;
 } & BasePayload;
