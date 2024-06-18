@@ -22,6 +22,7 @@ export type {
   BusinessTimestamps,
   BusinessType,
 } from "./business";
+export type { Discount, DiscountStatus, DiscountTimestamps } from "./discount";
 export type {
   BasePayload,
   BasePayloadMeta,
