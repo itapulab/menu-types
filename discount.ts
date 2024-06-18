@@ -16,5 +16,7 @@ export type Discount = {
   toId: string;
   status: DiscountStatus;
   timestamps: DiscountTimestamps;
+  createdAt: Timestamp;
+  updatedAt?: Timestamp;
   value: number;
 };
