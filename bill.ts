@@ -86,6 +86,7 @@ export type Bill = {
   createdAt: Timestamp;
   updatedAt?: Timestamp;
   serviceFee?: number;
+  advancePayment?: number;
   value?: number;
   // trasient
   orders?: Order[];
