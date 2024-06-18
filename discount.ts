@@ -7,11 +7,13 @@ export type DiscountTimestamps = {
   [K in DiscountStatus]?: Timestamp;
 };
 
+export type DiscountOrigin = {
+  campaign: "mgm";
+  service: BusinessService;
+};
+
 export type Discount = {
-  origin: {
-    campaign: "mgm";
-    service: BusinessService;
-  };
+  origin: DiscountOrigin;
   fromId: string;
   toId: string;
   status: DiscountStatus;
