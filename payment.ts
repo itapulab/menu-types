@@ -5,6 +5,10 @@ export type PaymentStatus = "processing" | "pending" | "paid" | "canceled";
 
 export type PaymentMethod = "pix" | "billet" | "credits";
 
+export type PaymentTimestamps = {
+  [K in PaymentStatus]?: Timestamp;
+};
+
 export type Payment = {
   businessId: string;
   services: BusinessService[];
@@ -19,8 +23,9 @@ export type Payment = {
   status: PaymentStatus;
   method?: PaymentMethod;
   billetUrl?: string;
+  // metadata
+  timestamps: PaymentTimestamps;
   createdAt: Timestamp;
   updatedAt: Timestamp;
   expiresAt: Timestamp;
-  paidAt?: Timestamp;
 };

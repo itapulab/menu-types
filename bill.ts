@@ -82,12 +82,12 @@ export type Bill = {
   createdBy: Creator;
   status: BillStatus;
   quotas: BillQuota[];
-  // metadata
-  createdAt: Timestamp;
-  updatedAt?: Timestamp;
   serviceFee?: number;
   advancePayment?: number;
   value?: number;
+  // metadata
+  createdAt: Timestamp;
+  updatedAt?: Timestamp;
   // trasient
   orders?: Order[];
 };
