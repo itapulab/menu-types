@@ -23,11 +23,11 @@ export type {
   BusinessType,
 } from "./business";
 export type {
-  Discount,
-  DiscountOrigin,
-  DiscountStatus,
-  DiscountTimestamps,
-} from "./discount";
+  Credit,
+  CreditOrigin,
+  CreditStatus,
+  CreditTimestamps,
+} from "./credit";
 export type {
   BasePayload,
   BasePayloadMeta,
