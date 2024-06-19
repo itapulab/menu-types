@@ -11,3 +11,12 @@ export type PlatformParams = {
     credit: number;
   };
 };
+
+export type PlatformMenuGalleryCategory = "beer" | "soda" | "juice";
+
+export type PlatformMenuGalleryItem = {
+  order: number;
+  category: PlatformMenuGalleryCategory;
+  name: string;
+  path: string;
+};
