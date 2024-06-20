@@ -49,6 +49,8 @@ export type Product = {
   /** Product classification with respect to specific diets. */
   classifications?: string[];
   complementsGroupsIds?: string[];
+  /** Image path to menu gallery item. */
+  imagePath?: string | null;
   /** Item external code. */
   externalId?: string;
   // metadata

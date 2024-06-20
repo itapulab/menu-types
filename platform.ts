@@ -19,4 +19,6 @@ export type PlatformMenuGalleryItem = {
   category: PlatformMenuGalleryCategory;
   name: string;
   path: string;
+  // transient
+  imageUrl?: string | null;
 };
