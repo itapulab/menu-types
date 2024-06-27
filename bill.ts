@@ -41,6 +41,7 @@ export type OrderItem = {
   name: string;
   quantity: number;
   price: number;
+  isDispatched?: boolean;
   externalId?: string;
   complements?: OrderItemComplement[];
   notes?: string;
