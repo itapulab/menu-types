@@ -14,6 +14,7 @@ export type {
   Business,
   BusinessAddress,
   BusinessManager,
+  BusinessMenuMode,
   BusinessOperation,
   BusinessService,
   BusinessSituation,

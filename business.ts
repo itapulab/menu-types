@@ -26,8 +26,11 @@ export type BusinessAddress = {
   latlng?: LatLng;
 };
 
+export type BusinessMenuMode = "default" | "read-only";
+
 export type BusinessOperation = {
   tables: number;
+  menuMode?: BusinessMenuMode;
 };
 
 export type BusinessTimestamps = {
