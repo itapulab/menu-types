@@ -9,7 +9,8 @@ export type BusinessSituation =
   | "approved"
   | "payment-pending"
   | "suspended"
-  | "blocked";
+  | "blocked"
+  | "deleted";
 
 export type BusinessStatus = "available" | "unavailable";
 

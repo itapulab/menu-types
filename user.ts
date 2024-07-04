@@ -8,7 +8,8 @@ export type UserProfileSituation =
   | "pending"
   | "approved"
   | "rejected"
-  | "blocked";
+  | "blocked"
+  | "deleted";
 
 export type UserProfileTimestamps = {
   [K in UserProfileSituation]?: Timestamp;
