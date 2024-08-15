@@ -32,6 +32,8 @@ export type BusinessMenuMode = "default" | "read-only";
 export type BusinessOperation = {
   tables: number;
   menuMode?: BusinessMenuMode;
+  /** Integer that represents the percentage to be charged */
+  serviceFeePercentage?: number;
 };
 
 export type BusinessTimestamps = {
